@@ -90,6 +90,7 @@ p {
     transform: rotate(-2deg);
     padding: 10px;
     display: flex;
+    justify-content: center;
 }
 
 .twoColomn {
@@ -195,3 +196,28 @@ p {
   height: 50px;
   z-index: 999;
 }
+
+@media (max-width: 450px) {
+    .content .stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "c c"
+        "a b";
+        gap: 10px;
+    }
+
+    .content .stats .shop {
+        grid-area: a;
+    }
+
+    .content .stats .numbers {
+        grid-area: b;
+    }
+
+    .content .stats .buySomething {
+        grid-area: c;
+        grid-column: 1 / 3;
+    }
+  }

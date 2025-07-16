@@ -38,9 +38,11 @@ let moneyNumb = parseInt(money.textContent);
 const begining =  document.getElementById('begining');
 const startButton =  document.getElementById('startButton');
 const mainBlock =  document.getElementById('mainBlock');
+const music = document.getElementById('bg-music');
 startButton.addEventListener('click', () => {
   begining.classList.add('hidden');
   mainBlock.classList.remove('hidden');
+  music.play();
 });
 
 //функция принудительной перезагрузки
