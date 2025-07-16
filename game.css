@@ -1,0 +1,196 @@
+body {
+    background-image: url('background.webp');
+    background-repeat: no-repeat;
+    background-position: top;
+    color: white;
+}
+
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+
+button {
+    background: transparent;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    border-bottom: 1px white dashed;
+    background: transparent;
+    display: block;
+    color: white;
+}
+
+p {
+    margin: 0;
+    text-align: center;
+}
+
+.firstBlock,
+.content {
+    margin: 10px auto 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 3px groove rgb(255, 255, 255);
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    border-top-left-radius: 37px 140px;
+    border-top-right-radius: 23px 130px;
+    border-bottom-left-radius: 110px 19px;
+    border-bottom-right-radius: 120px 24px;
+    transform: rotate(-1deg);
+}
+
+.hidden {
+    display: none;
+}
+
+.firstBlock {
+    max-width: 300px;
+    gap: 10px;
+    padding: 30px;
+}
+
+.content .stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.content .stats .shop {
+    border: solid rgb(255, 255, 255);
+    border-width: 3px 4px 3px 5px;
+    border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
+    transform: rotate(2deg);
+    padding: 15px;
+    justify-content: center;
+    display: flex;
+}
+
+.content .stats .shop .twoColomn {
+    gap: 10px;
+    font-size: medium;
+}
+
+.content .stats .numbers {
+    border: solid rgb(255, 255, 255);
+    border-width: 3px 3px 5px 5px;
+    border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+    transform: rotate(-2deg);
+    padding: 15px;
+}
+
+.twoColomn {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: large;
+    align-items: center;
+}
+
+.content .stats .numbers .twoColomn .points {
+    text-align: right;
+}
+
+.content .stats .buySomething {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: solid rgb(255, 255, 255);
+    border-width: 5px 3px 3px 5px;
+    border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+    transform: rotate(2deg);
+    padding: 15px;
+    justify-content: center;
+}
+
+.content .stats .buySomething .buy {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content .placesAndActions {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border: solid rgb(255, 255, 255);
+    border-width: 3px 3px 5px 5px;
+    border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+    padding: 15px;
+}
+
+.content .placesAndActions .places {
+    flex: 2;
+    border-right: 1px solid rgba(255, 255, 255, 0.647);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.content .placesAndActions .places .casino {
+    margin-top: 10px;
+}
+
+.content .placesAndActions .actions {
+    flex: 1;
+    padding: 10px;    
+}
+
+.content .description {
+    border: solid rgb(255, 255, 255);
+    padding: 20px;
+    border-top-left-radius: 37px 140px;
+    border-top-right-radius: 23px 130px;
+    border-bottom-left-radius: 110px 19px;
+    border-bottom-right-radius: 120px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content .description #actionDescription {
+    height: 80px;
+    overflow-y: auto; 
+    color: rgba(255, 255, 255, 0.767);
+    scrollbar-color: rgba(136, 136, 136, 0.4) transparent;
+}
+
+.content .description #actionDescription p {
+    text-align: left;
+    font-size: small;
+    padding: 5px;
+}
+
+.deadIccon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00000047;
+  color: white;
+  font-size: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.deadWindow {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 100px;
+  height: 50px;
+  z-index: 999;
+}

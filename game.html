@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div id="begining" class="firstBlock">
+        <p id="firstText">Привет, ты только вышел вышел из тюряги и нужно как-то жить дальше. Из хорошего - у тебя осталась квартирка, но район такой себе, с повышенной преступностью. Нет времени объяснять, тут разобраться не сложно. Всё, что тебе нужно знать: <br> <br> 1. Каждый поход в одно из четырёх мест уменьшает сытость на 1. <br> <br>2. Как только любая из характеристик станет равна нулю - игра закончится. <br> <br>Удачи!</p>
+        <button id="startButton">Начать</button>
+    </div>
+    <div id="mainBlock" class="content hidden">
+        <div class="stats">
+            <div class="shop">
+                <div class="twoColomn">
+                    <ul>
+                        <li class="bread">1. Хлебушек</li>
+                        <li class="potato">2. Пюре</li>
+                        <li class="bandage">3. Пилюля</li>
+                        <li class="beer">4. Пиво</li>
+                        <li class="vodka">5. Водочка</li>
+                    </ul>
+                    <ul>
+                        <li>2$</li>
+                        <li>5$</li>
+                        <li>6$</li>
+                        <li>3$</li>
+                        <li>8$</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="numbers">
+                <div class="twoColomn">
+                    <div class="name">
+                        <ul>
+                            <li>Сытость</li>
+                            <li>Здоровье</li>
+                            <li>Репутация</li>
+                            <li>Бабосики</li>
+                        </ul>
+                    </div>
+                    <div class="points">
+                        <ul>
+                            <li id="hunger">30</li>
+                            <li id="health">40</li>
+                            <li id="reputation">15</li>
+                            <li id="money">10</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="buySomething">
+                <div class="buy">
+                    <p>Затариться можно тут ↓</p>
+                    <input id="shop" type="text" placeholder="Цифру черкани">
+                    <button id="buttonForShop">Взять</button>
+                </div>
+            </div>
+        </div>
+        <div class="placesAndActions">
+            <div class="places">
+                <p>Куда потопаем?</p>
+                <button id="casino">Сходить в казик</button>
+                <button id="construction">Сгонять на стройку</button>
+                <button id="bar">Пойти в пивнуху</button>
+                <button id="forest">Собрать в лесу грибов</button>
+            </div>
+            <div class="actions">
+                <p>Твои действия:</p>
+                <button id="rolletRed" class="hidden">1$ на красный</button>
+                <button id="rolletBlack" class="hidden">1$ на чёрный</button>
+                <button id="hit" class="hidden">Ударить</button>
+                <button id="leave" class="hidden">Уйти</button>
+                <button id="work" class="hidden">Работать</button>
+                <button id="steal" class="hidden">Стырить медь</button>
+                <button id="smoke" class="hidden">Дунуть</button>
+                <button id="noSmoke" class="hidden">Курить вредно</button>
+                <button id="edge" class="hidden">Опушка</button>
+                <button id="trail" class="hidden">Тропинка</button>
+            </div>
+        </div>
+        <div class="description">
+            <p>Расклад твоих телодвижений:</p>
+            <div id="actionDescription">
+            </div>
+        </div>
+    </div> 
+    <div id="deadToggle" class="deadIccon">💀</div>
+    <div id="deadWindow" class="deadWindow hidden">
+        <button id="heandRestart">Кнопка для перезапуска</button>
+    </div>
+<script src="game.js"></script>
+</body>
+</html>
