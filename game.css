@@ -26,6 +26,8 @@ input {
     background: transparent;
     display: block;
     color: white;
+    width: 100%;
+    font-size: small;
 }
 
 p {
@@ -72,13 +74,12 @@ p {
     border-width: 3px 4px 3px 5px;
     border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
     transform: rotate(2deg);
-    padding: 15px;
+    padding: 10px;
     justify-content: center;
     display: flex;
 }
 
 .content .stats .shop .twoColomn {
-    gap: 10px;
     font-size: medium;
 }
 
@@ -87,13 +88,14 @@ p {
     border-width: 3px 3px 5px 5px;
     border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
     transform: rotate(-2deg);
-    padding: 15px;
+    padding: 10px;
+    display: flex;
 }
 
 .twoColomn {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 10px;
     font-size: large;
     align-items: center;
 }
@@ -105,7 +107,6 @@ p {
 .content .stats .buySomething {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     border: solid rgb(255, 255, 255);
     border-width: 5px 3px 3px 5px;
     border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
@@ -117,7 +118,7 @@ p {
 .content .stats .buySomething .buy {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .content .placesAndActions {
